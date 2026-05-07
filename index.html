@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinguaMaster — Языковая школа</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+        }
+        .hero {
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+        }
+        .smooth-scroll {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-zinc-50 text-zinc-900 smooth-scroll">
+
+    <!-- Навигационное меню -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 bg-blue-600 rounded-xl flex items-center justify-center text-white font-bold text-xl">LM</div>
+                    <span class="text-2xl font-bold">LinguaMaster</span>
+                </div>
+                
+                <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+                    <a href="#courses" class="hover:text-blue-600 transition-colors">Курсы</a>
+                    <a href="#about" class="hover:text-blue-600 transition-colors">О школе</a>
+                    <a href="#contact" class="hover:text-blue-600 transition-colors">Контакты</a>
+                </div>
+                
+                <a href="#contact" 
+                   class="bg-blue-600 text-white px-6 py-2.5 rounded-2xl text-sm font-semibold hover:bg-blue-700 transition-colors">
+                    Записаться
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Секция с баннером -->
+    <header class="hero text-white py-28">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
+                Изучай языки с удовольствием
+            </h1>
+            <p class="text-xl md:text-2xl max-w-2xl mx-auto mb-10 text-blue-100">
+                Английский, немецкий, французский, испанский и другие языки<br>для взрослых и детей
+            </p>
+            <a href="#contact" 
+               class="inline-block bg-white text-blue-700 px-10 py-4 rounded-3xl font-semibold text-lg hover:bg-blue-50 transition-all">
+                Начать обучение бесплатно
+            </a>
+        </div>
+    </header>
+
+    <!-- Секция с контентом 1 -->
+    <section id="courses" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">Наши курсы</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white border rounded-3xl p-8 hover:shadow-xl transition-shadow">
+                    <div class="text-4xl mb-4">🇬🇧</div>
+                    <h3 class="text-2xl font-semibold mb-2">Английский язык</h3>
+                    <p class="text-zinc-600">От beginner до Advanced. Подготовка к IELTS и TOEFL.</p>
+                    <div class="mt-6 text-sm font-medium text-blue-600">от 2900 ₽/мес</div>
+                </div>
+                
+                <div class="bg-white border rounded-3xl p-8 hover:shadow-xl transition-shadow">
+                    <div class="text-4xl mb-4">🇩🇪</div>
+                    <h3 class="text-2xl font-semibold mb-2">Немецкий язык</h3>
+                    <p class="text-zinc-600">Разговорный немецкий, подготовка к Goethe-Zertifikat.</p>
+                    <div class="mt-6 text-sm font-medium text-blue-600">от 3200 ₽/мес</div>
+                </div>
+                
+                <div class="bg-white border rounded-3xl p-8 hover:shadow-xl transition-shadow">
+                    <div class="text-4xl mb-4">🇪🇸</div>
+                    <h3 class="text-2xl font-semibold mb-2">Испанский язык</h3>
+                    <p class="text-zinc-600">Яркий и живой курс для путешествий и общения.</p>
+                    <div class="mt-6 text-sm font-medium text-blue-600">от 2900 ₽/мес</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция с контентом 2 -->
+    <section id="about" class="py-20 bg-zinc-100">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">Почему выбирают нас</h2>
+            
+            <div class="grid md:grid-cols-2 gap-10">
+                <div class="bg-white p-8 rounded-3xl">
+                    <h3 class="font-semibold text-2xl mb-4">Опытные преподаватели</h3>
+                    <p class="text-zinc-600">Носители языка и преподаватели с международными сертификатами и большим опытом.</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl">
+                    <h3 class="font-semibold text-2xl mb-4">Гибкий график</h3>
+                    <p class="text-zinc-600">Утренние, вечерние и выходные группы. Онлайн и оффлайн форматы.</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl">
+                    <h3 class="font-semibold text-2xl mb-4">Маленькие группы</h3>
+                    <p class="text-zinc-600">До 8 человек в группе — максимум внимания каждому студенту.</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl">
+                    <h3 class="font-semibold text-2xl mb-4">Результат гарантирован</h3>
+                    <p class="text-zinc-600">Тесты уровня каждые 4 недели и сертификат по окончании курса.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция с формой -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-lg mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-3">Запишитесь на бесплатное пробное занятие</h2>
+            <p class="text-center text-zinc-600 mb-10">Оставьте заявку и мы свяжемся с вами в течение дня</p>
+            
+            <form id="contact-form" onsubmit="handleSubmit(event)" class="space-y-6">
+                <input type="text" id="name" placeholder="Ваше имя" required
+                       class="w-full px-6 py-4 border border-zinc-300 rounded-2xl focus:outline-none focus:border-blue-500">
+                
+                <input type="tel" id="phone" placeholder="Телефон" required
+                       class="w-full px-6 py-4 border border-zinc-300 rounded-2xl focus:outline-none focus:border-blue-500">
+                
+                <input type="email" id="email" placeholder="Email" 
+                       class="w-full px-6 py-4 border border-zinc-300 rounded-2xl focus:outline-none focus:border-blue-500">
+                
+                <select id="language" required
+                        class="w-full px-6 py-4 border border-zinc-300 rounded-2xl focus:outline-none focus:border-blue-500">
+                    <option value="">Выберите язык</option>
+                    <option value="english">Английский</option>
+                    <option value="german">Немецкий</option>
+                    <option value="spanish">Испанский</option>
+                    <option value="french">Французский</option>
+                </select>
+                
+                <button type="submit"
+                        class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-5 rounded-3xl text-lg transition-colors">
+                    Записаться на пробное занятие
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="bg-zinc-900 text-zinc-400 py-12">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="flex items-center gap-3 text-white">
+                    <div class="w-8 h-8 bg-blue-600 rounded-xl flex items-center justify-center font-bold text-xl">LM</div>
+                    <span class="text-xl font-bold">LinguaMaster</span>
+                </div>
+                
+                <div class="text-sm">
+                    © 2026 LinguaMaster. Все права защищены.
+                </div>
+                
+                <div class="flex gap-6 text-sm">
+                    <a href="#" class="hover:text-white">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function handleSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            alert(`Спасибо, ${name}! Мы свяжемся с вами в ближайшее время для записи на пробное занятие.`);
+            e.target.reset();
+        }
+        
+        // Простое мобильное меню (если нужно)
+        console.log('%cСайт языковой школы LinguaMaster готов ✅', 'color: #3b82f6; font-weight: 600');
+    </script>
+</body>
+</html>
